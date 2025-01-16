@@ -1,0 +1,253 @@
+::before,::after,*{
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+
+body{
+ background-image:  url(../src/assets/arun-clarke-5vLPyrbf5Tc-unsplash.jpg);
+  margin:0;
+
+  
+}
+
+@font-face {
+  font-family:'myFont' ;
+  font-weight: 600;
+  src: url(./assets/Jersey15-Regular.ttf) format('truetype');
+}
+
+.header{
+  font-family: myFont;
+  font-size: 2rem;
+  color:white;
+  
+  display:  grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap:5px;
+  align-items: center;
+  background-color: rgba(46, 45, 45, 0.514) ;
+  
+}
+.header>header{
+  text-align: center;
+}
+
+.header>.navNoVis{
+ display: flex;
+ justify-content: space-evenly;
+
+}
+.header>nav>a{
+  transform: scale(1);
+  text-decoration: none;
+  color: white;
+  transition:0.5s ease-out transform;
+}
+.header>nav>a:hover{
+  transform: scale(1.5);
+}
+
+.cart{
+  border: none;
+  cursor: pointer;
+  background-color: rgba(46, 45, 45, 0.514);
+}
+
+.intro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: serif;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(145deg, rgb(209, 207, 207) 90%,rgba(46, 45, 45, 0.514) 10%);
+
+}
+.intro>img{
+  width: 350px;
+}
+
+.one{
+  color:red;
+  text-transform: uppercase;
+  text-align:left;
+  position: relative;
+  left:150px;
+}
+
+.two{
+  font-size: 3rem;
+  position: relative;
+  color:black;
+  left:150px;
+}
+.three{
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: black;
+  position: relative;
+  left:150px;
+}
+
+.explore>h2{
+  font-family: myFont;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.shoplist{
+  position: absolute;
+  top:15vh;
+  left:85vw;
+  border: 1px black solid;
+  background-color:  rgb(202, 191, 191);
+  padding: 10px;
+  height: 200px;
+  width:200px;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out,transform 0.5s ease-in-out;
+  overflow: scroll;
+}
+
+.visible{
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+
+.cart-item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1rem;
+  align-items: center;
+}
+.cart-item>img{
+  width: 20px;
+  height: 20px;
+
+}
+.cart-item>hr{
+  color: black;
+  width:80%;
+}
+
+.icon{
+  display: none;
+}
+
+.mobCart{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+
+
+  .header>header{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .icon{
+    display: block;
+  }
+
+  .header{
+    font-family: myFont;
+    font-size: 2rem;
+    color:black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+
+
+  .navNoVis{
+   visibility: hidden;
+  
+    transform: scaleY(0);
+    transform-origin: top;
+   
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out,transform 0.5s ease-in-out;
+  }
+
+  .navVis{
+    visibility: visible;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+
+  .cart{
+    display: none;
+  }
+  .mobCart{
+    display: block;
+    border: none;
+  cursor: pointer;
+  background-color: rgba(46, 45, 45, 0.514);
+  }
+
+  .intro{
+    margin: -1px;
+    background-image: linear-gradient(145deg, rgb(209, 207, 207) 90%,rgba(46, 45, 45, 0.514)10%);
+  
+  }
+  .words{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.intro>img{
+  max-width: 150px;
+  transform: translateX(-65%);
+}
+
+.one{
+  color:red;
+  text-transform: uppercase;
+  text-align:left;
+  position: relative;
+left:52%;
+  
+}
+
+
+.two{
+  font-size: 3rem;
+text-align: left;
+position: relative;
+left:50%;
+  color:white;
+  z-index: 1;
+ 
+}
+
+
+.three{
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: black;
+  position: relative;
+left:50%;
+  
+  
+}
+
+.shoplist{
+  left: 25%;
+}
+
+}

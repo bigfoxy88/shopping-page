@@ -1,0 +1,23 @@
+html{
+  height: 100%;
+  background-image:  url(../src/assets/arun-clarke-5vLPyrbf5Tc-unsplash.jpg);
+}
+
+body{
+
+   margin:0;
+ 
+   
+ }
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

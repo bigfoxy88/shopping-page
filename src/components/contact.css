@@ -1,0 +1,13 @@
+@font-face {
+    font-family:'myFont' ;
+    font-weight: 600;
+    src: url(../assets/Jersey15-Regular.ttf) format('truetype');
+  }
+
+
+.contact{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: myFont;
+}

@@ -1,0 +1,24 @@
+@font-face {
+    font-family:'myFont' ;
+    font-weight: 600;
+    src: url(./assets/Jersey15-Regular.ttf) format('truetype');
+  }
+
+.about{
+    padding: 30px;
+    height: 100%;
+    background-image: url('../assets/arun-clarke-5vLPyrbf5Tc-unsplash.jpg');
+    color: white;
+}
+
+.abouth{
+    text-align: center;
+    font-family: myFont;
+    font-size: 2rem;
+}
+
+.aboutp{
+    text-align: center;
+    font-family: myFont;
+    font-size: 1.5rem;
+}
